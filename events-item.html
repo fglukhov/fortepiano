@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="js/pickadate/classic.css">
     <link rel="stylesheet" href="js/pickadate/classic.date.css">
+    <link rel="stylesheet" href="js/pickadate/classic.time.css">
     <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
     <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput-rtl.min.css">
     <link rel="stylesheet" href="css/nouislider.min.css">
@@ -78,7 +79,10 @@
           <div class="container">
             <div class="event-card">
               <div class="row">
-                <div class="col-12 col-sm-8 col-md-6 order-2">
+                <div class="col-12 col-md-4 col-lg-6">
+                  <div class="event-card-pic"><img src="files/event-card-pic.jpg"></div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-6">
                   <div class="event-card-descr">
                     <div class="event-tmb-date-time">
                       <div class="event-tmb-date"><span>26,27</span> октября</div>
@@ -94,9 +98,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-4 col-md-6 order-1">
-                  <div class="event-card-pic"><img src="files/event-card-pic.jpg"></div>
-                </div>
               </div>
             </div>
           </div>
@@ -106,7 +107,7 @@
         <div class="section-footer-book">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12 col-sm-8 offset-sm-4 col-md-6 offset-md-6">
+              <div class="col-xs-12 col-md-8 offset-md-4 col-lg-6 offset-lg-6">
                 <div class="form-alt book-form">
                   <div class="h2">Забронировать стол</div>
                   <form>
@@ -177,114 +178,65 @@
           </div>
         </div>
       </footer>
-      <div class="modal fade form-modal" id="selectModal" tabindex="-1">
+      <div class="modal fade book-modal" id="bookModal" tabindex="-1">
+        <button class="close" data-dismiss="modal"></button>
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-content-inner">
-              <div class="modal-header">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-                <div class="h2">Оставь свои контактные данные</div>
+              <div class="book-modal-header">
+                <div class="h2">Забронировать стол</div>
+                <p>Оставьте заявку, чтобы забронировать стол. Наш менеджер свяжется с&nbsp;вами в&nbsp;ближайшее время, чтобы подтвердить бронь.</p>
               </div>
-              <div class="modal-body">
-                <div class="modal-form">
+              <div class="book-modal-content">
+                <div class="form-alt modal-form">
                   <form>
-                    <div class="form-group">
-                      <label class="placeholder" for="select_modal_name">Имя</label>
-                      <input type="text" name="select_modal_name" id="select_modal_name" required>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="book_modal_name">Ваше имя</label>
+                          <input type="text" name="book_modal_name" id="book_modal_name" required>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="book_modal_phone">+7 (XXX) XXX-XX-XX</label>
+                          <input class="input-phone" type="text" name="book_modal_phone" id="book_modal_phone" required>
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-group">
-                      <label class="placeholder" for="select_modal_phone"> +7 (___) ___-__-__</label>
-                      <input class="input-phone" type="text" name="select_modal_phone" id="select_modal_phone" required>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="book_modal_date">Дата</label>
+                          <input class="input-date" type="text" name="book_modal_date" id="book_modal_date" required>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="book_modal_time">Время</label>
+                          <input class="input-time" type="text" name="book_modal_time" id="book_modal_time" required>
+                        </div>
+                      </div>
                     </div>
                     <div class="form-footer">
-                      <button class="btn btn-1" type="submit">Подтвертдить контакты</button>
+                      <button class="btn btn-1" type="submit">Забронировать стол</button>
                     </div>
                   </form>
                 </div>
               </div>
-            </div>
-            <div class="modal-footer">
-              <p>Индивидуальное предложение уже подготавливается для тебя!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade form-modal" id="callbackModal" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-content-inner">
-              <div class="modal-header">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-                <div class="h2">Как с тобой связаться?</div>
-              </div>
-              <div class="modal-body">
-                <div class="modal-form">
-                  <form>
-                    <input type="hidden" name="callback_modal_name" id="callback_modal_name" required>
-                    <div class="form-group">
-                      <label class="placeholder" for="callback_modal_phone"> +7 (___) ___-__-__</label>
-                      <input class="input-phone" type="text" name="callback_modal_phone" id="callback_modal_phone" required>
-                    </div>
-                    <div class="form-footer">
-                      <button class="btn btn-1" type="submit">Подтвертдить контакты</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <p>
-                <u>Оставь свой телефон, чтобы мы могли узнать у тебя время и место!</u>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade form-modal" id="meetModal" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-content-inner">
-              <div class="modal-header">
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-                <div class="h2">Оставь свои контактные данные</div>
-              </div>
-              <div class="modal-body">
-                <div class="modal-form">
-                  <form>
-                    <div class="form-group">
-                      <label class="placeholder" for="meet_modal_name">Имя</label>
-                      <input type="text" name="meet_modal_name" id="meet_modal_name" required>
-                    </div>
-                    <div class="form-group">
-                      <label class="placeholder" for="meet_modal_phone"> +7 (___) ___-__-__</label>
-                      <input class="input-phone" type="text" name="meet_modal_phone" id="meet_modal_phone" required>
-                    </div>
-                    <div class="form-footer">
-                      <button class="btn btn-1" type="submit">Подтвертдить контакты</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <p><span class="meet-modal-name"></span> уже готовится к вашей встрече!</p>
             </div>
           </div>
         </div>
       </div>
       <div class="modal fade form-modal success-modal" id="successModal" tabindex="-1">
+        <button class="close" data-dismiss="modal"></button>
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-content-inner">
-              <div class="modal-header">
-                <div class="h2">Заявка принята</div>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"></button>
-              </div>
+            <div class="modal-header">
+              <div class="h2">Заявка принята</div>
             </div>
-            <div class="modal-footer">
-              <p>
-                <u>Ответ поступит в ближайшее время!</u>
-              </p>
+            <div class="modal-body">
+              <p>Ответ поступит в ближайшее время!</p>
             </div>
           </div>
         </div>
@@ -309,10 +261,11 @@
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/pickadate/picker.js"></script>
       <script src="js/pickadate/picker.date.js"></script>
+      <script src="js/pickadate/picker.time.js"></script>
       <script src="js/pickadate/pickadate.ru.js"></script>
       <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
       <script src="js/jquery.mousewheel.js"></script>
-      <!--script(src='js/animations.js')-->
+      <script src="js/animations.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnKKzl2zYJy_aTqe-1wAI0BHOrDNvVbEY"></script>
       <script src="js/main.js"></script>
     </div>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ForteПьяно</title>
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="js/pickadate/classic.css">
+    <link rel="stylesheet" href="js/pickadate/classic.date.css">
+    <link rel="stylesheet" href="js/pickadate/classic.time.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput-rtl.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/retina.css">
+  </head>
+  <body>
+    <div class="over-wrapper">
+      <div id="mobile-indicator"></div>
+      <div id="sm-indicator"></div>
+      <header class="header-event">
+        <div class="header-content">
+          <div class="container">
+            <div class="header-top">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                  <div class="header-logo"><a href="/"><img class="logo-normal" src="images/logo.png" alt="ForteПьяно"><img class="logo-fixed" src="images/logo-fixed.png" alt="ForteПьяно"></a></div>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                  <div class="header-top-r">
+                    <div class="header-phone"><a href="tel: 8 (985) 920-39-69">8 (985) 920-39-69</a></div>
+                    <div class="header-button"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#bookModal">Забронировать стол</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="header-bottom">
+              <div class="menu-trigger"><span></span><span></span><span></span></div>
+              <div class="header-menu">
+                <div class="close"></div>
+                <div class="header-menu-inner">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Каталог песен</a></li>
+                    <li><a href="#">Афиша</a></li>
+                    <li><a class="active" href="#">Акции</a></li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="#">Меню</a></li>
+                    <li><a href="#">VIP</a></li>
+                    <li><a href="#">Банкеты</a></li>
+                    <li><a href="#">День Рождения</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+              <!-- Шапка страницы-->
+              <div class="page-header">
+                <div class="container">
+                  <ul class="breadcrumb">
+                    <li><a href="#">Главная</a></li>
+                    <li>Каталог песен</li>
+                  </ul>
+                  <h1>Каталог песен</h1>
+                </div>
+              </div>
+        <div class="header-bg" style="background-image:url(images/header-bg.jpg);"></div>
+      </header>
+      <div class="main">
+        <div class="page-content">
+          <div class="container">
+            <div class="catalog-header">
+              <div class="catalog-index">
+                <div class="catalog-index-row"><a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a><a href="#">E</a><a href="#">F</a><a href="#">G</a><a href="#">H</a><a href="#">I</a><a href="#">J</a><a href="#">K</a><a href="#">L</a><a href="#">M</a><a href="#">N</a><a href="#">O</a><a href="#">P</a><a href="#">Q</a><a href="#">R</a><a href="#">S</a><a href="#">T</a><a href="#">U</a><a href="#">V</a><a href="#">W</a><a href="#">X</a><a href="#">Y</a><a href="#">Z</a></div>
+                <div class="catalog-index-row"><a href="#">А</a><a href="#">Б</a><a href="#">В</a><a href="#">Г</a><a href="#">Д</a><a href="#">Е</a><a href="#">Ё</a><a href="#">Ж</a><a href="#">З</a><a href="#">И</a><a href="#">Й</a><a href="#">К</a><a href="#">Л</a><a href="#">М</a><a href="#">Н</a><a href="#">О</a><a href="#">П</a><a href="#">Р</a><a href="#">С</a><a href="#">Т</a><a href="#">У</a><a href="#">Ф</a><a href="#">Х</a><a href="#">Ц</a><a href="#">Ч</a><a href="#">Ш</a><a href="#">Щ</a><a href="#">Э</a><a href="#">Ю</a><a href="#">Я</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">0</a></div>
+              </div>
+              <div class="catalog-search">
+                <div class="search-form">
+                  <form>
+                    <div class="form-field">
+                      <label class="placeholder" for="search_input">Я ищу...</label>
+                      <input type="text" name="search_input" id="search_input" required>
+                    </div>
+                    <div class="form-footer">
+                      <button class="btn-search" type="submit"></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section section-catalog">
+          <div class="container">
+            <div class="section-content">
+              <div class="section-ttl">Песни</div>
+              <div class="catalog-wrapper">
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <div class="h2">Популярные песни</div>
+                  </div>
+                  <div class="col-12 col-md-8">
+                    <div class="catalog-table-wrapper">
+                      <table class="catalog-table">
+                        <tr>
+                          <th>№</th>
+                          <th>Исполнитель</th>
+                          <th>Песня</th>
+                          <th>Время</th>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Aztec Camera</td>
+                          <td class="catalog-item-name">Somewhere In My Heart</td>
+                          <td class="catalog-item-time">03:45</td>
+                        </tr>
+                        <tr>
+                          <td class="catalog-item-num">123456</td>
+                          <td class="catalog-item-artist">Azalea, Iggy &amp; Aoki, Steve</td>
+                          <td class="catalog-item-name">I Don't Have To Be Me Til Monday</td>
+                          <td class="catalog-item-time">04:23</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="section-footer-book">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-8 offset-md-4 col-lg-6 offset-lg-6">
+                <div class="form-alt book-form">
+                  <div class="h2">Забронировать стол</div>
+                  <form>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="book_name">Ваше имя</label>
+                          <input type="text" name="book_name" id="book_name" required>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="book_phone">+7 (XXX) XXX-XX-XX</label>
+                          <input class="input-phone" type="text" name="book_phone" id="book_phone" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="book_date">Дата</label>
+                          <input class="input-date" type="text" name="book_date" id="book_date" required>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="book_time">Время</label>
+                          <input class="input-time" type="text" name="book_time" id="book_time" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-footer">
+                      <button class="btn btn-1" type="submit">Забронировать стол</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-footer-contacts">
+          <div class="footer-contacts-map" id="footerContactsMap"></div>
+          <div class="container">
+            <div class="footer-contacts-descr">
+              <div class="footer-contacts-descr-inner">
+                <div class="footer-contacts-ttl">Как нас найти</div>
+                <div class="h2">Контакты</div>
+                <div class="hr"></div>
+                <div class="footer-contacts-phone"><a href="tel:8 (985) 920-39-69">8 (985) 920-39-69</a></div>
+                <div class="footer-contacts-address">
+                  <p>Москва, Большой Путинковский переулок, 5</p>
+                </div>
+                <div class="footer-contacts-timetable">
+                  <p><span class="d">вс-чт:</span> <span class="t">21:00 - 6:00</span> <span class="d">пт-сб:</span> <span class="t">21:00 - 7:00</span></p>
+                </div>
+                <div class="footer-contacts-soclinks"><a class="soclink soclink-vk" href="#"></a><a class="soclink soclink-fb" href="#"></a><a class="soclink soclink-instagram" href="#"></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-footer-bottom">
+          <div class="container">
+            <div class="footer-logo"><a href="/"><img src="images/logo-footer.png" alt="ForteПьяно"></a></div>
+            <div class="footer-ttl">Karaoke bar</div>
+            <div class="footer-copy">
+              <p>&copy; Karaoke bar &laquo;ForteПьяно&raquo;. Все права защищены, 2018</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade book-modal" id="bookModal" tabindex="-1">
+        <button class="close" data-dismiss="modal"></button>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-content-inner">
+              <div class="book-modal-header">
+                <div class="h2">Забронировать стол</div>
+                <p>Оставьте заявку, чтобы забронировать стол. Наш менеджер свяжется с&nbsp;вами в&nbsp;ближайшее время, чтобы подтвердить бронь.</p>
+              </div>
+              <div class="book-modal-content">
+                <div class="form-alt modal-form">
+                  <form>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="book_modal_name">Ваше имя</label>
+                          <input type="text" name="book_modal_name" id="book_modal_name" required>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="book_modal_phone">+7 (XXX) XXX-XX-XX</label>
+                          <input class="input-phone" type="text" name="book_modal_phone" id="book_modal_phone" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="book_modal_date">Дата</label>
+                          <input class="input-date" type="text" name="book_modal_date" id="book_modal_date" required>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="book_modal_time">Время</label>
+                          <input class="input-time" type="text" name="book_modal_time" id="book_modal_time" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-footer">
+                      <button class="btn btn-1" type="submit">Забронировать стол</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal success-modal" id="successModal" tabindex="-1">
+        <button class="close" data-dismiss="modal"></button>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="h2">Заявка принята</div>
+            </div>
+            <div class="modal-body">
+              <p>Ответ поступит в ближайшее время!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/jquery.nicefileinput.min.js"></script>
+      <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/nouislider.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/additional-methods.min.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/wNumb.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+      <script src="js/greensock/TweenMax.min.js"></script>
+      <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+      <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+      <script src="js/iscroll-probe.js"></script>
+      <script src="js/scrollmagic/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/pickadate/picker.js"></script>
+      <script src="js/pickadate/picker.date.js"></script>
+      <script src="js/pickadate/picker.time.js"></script>
+      <script src="js/pickadate/pickadate.ru.js"></script>
+      <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+      <script src="js/jquery.mousewheel.js"></script>
+      <script src="js/animations.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnKKzl2zYJy_aTqe-1wAI0BHOrDNvVbEY"></script>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,40 +1,38 @@
 var is_mobile = false;
 
-if( $('#mobile-indicator').css('display')=='none') {
+if( $('#mobile-indicator').css('display') == 'block') {
   is_mobile = true;
 }
 
 if (!is_mobile) {
 
-  var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+  var controller = new ScrollMagic.Controller();
 
-  new ScrollMagic.Scene({triggerElement: "header"})
-    .setTween(".city-1", {y: "80%"})
-    .addTo(controller);
+  $.each( $(".events-slider"), function( index, element ) {
 
-  new ScrollMagic.Scene({triggerElement: "header"})
-    .setTween(".city-2", {y: "60%"})
-    .addTo(controller);
-
-  new ScrollMagic.Scene({triggerElement: "header"})
-    .setTween(".city-3", {y: "40%"})
-    .addTo(controller);
-
-  var controller2 = new ScrollMagic.Controller();
-
-  $.each( $(".top-pros-list .tmb"), function( index, element ) {
-
-    var topProsTmbTween = new TweenMax.to($(element), .5, {
+    var eventsSliderTween = new TweenMax.to($(element), .5, {
       y: 0,
-      opacity: 1,
-      scale: 1,
-      delay: $(this).prevAll().length*.5 + .7
+      opacity: 1
     });
 
-    var sceneTopPros = new ScrollMagic.Scene({triggerElement: $("header")})
+    var sceneEventsSlider = new ScrollMagic.Scene({triggerElement: element})
       .offset(-100)
-      .setTween(topProsTmbTween)
-      .addTo(controller2);
+      .setTween(eventsSliderTween)
+      .addTo(controller)
+
+  });
+
+  $.each( $(".actions-slider"), function( index, element ) {
+
+    var actionsSliderTween = new TweenMax.to($(element), .5, {
+      y: 0,
+      opacity: 1
+    });
+
+    var sceneactionsSlider = new ScrollMagic.Scene({triggerElement: element})
+      .offset(-100)
+      .setTween(actionsSliderTween)
+      .addTo(controller)
 
   });
 
@@ -49,7 +47,7 @@ if (!is_mobile) {
     var sceneCreditPros = new ScrollMagic.Scene({triggerElement: element})
       .offset(-250)
       .setTween(creditProsTmbTween)
-      .addTo(controller2);
+      .addTo(controller);
 
   });
 
@@ -64,7 +62,7 @@ if (!is_mobile) {
     var sceneCalcSlider = new ScrollMagic.Scene({triggerElement: element})
       .offset(-300)
       .setTween(calcSliderTween)
-      .addTo(controller2);
+      .addTo(controller);
 
   });
 
@@ -79,7 +77,7 @@ if (!is_mobile) {
     var sceneCompanyPros = new ScrollMagic.Scene({triggerElement: element})
       .offset(-300)
       .setTween(companyProsTween)
-      .addTo(controller2);
+      .addTo(controller);
 
   });
 
@@ -94,7 +92,7 @@ if (!is_mobile) {
     var sceneWorkPic = new ScrollMagic.Scene({triggerElement: element.closest(".work-list")})
       .offset(-300)
       .setTween(workPicTween)
-      .addTo(controller2);
+      .addTo(controller);
 
   });
 
@@ -109,7 +107,7 @@ if (!is_mobile) {
     var sceneWorkText = new ScrollMagic.Scene({triggerElement: element.closest(".work-list")})
       .offset(-300)
       .setTween(workTextTween)
-      .addTo(controller2);
+      .addTo(controller);
 
   });
 
@@ -124,7 +122,7 @@ if (!is_mobile) {
     var scenePros = new ScrollMagic.Scene({triggerElement: element.closest(".pros-list")})
       .offset(-300)
       .setTween(prosTween)
-      .addTo(controller2);
+      .addTo(controller);
 
   });
 
@@ -139,7 +137,7 @@ if (!is_mobile) {
     var sceneCert = new ScrollMagic.Scene({triggerElement: element.closest(".cert-list")})
       .offset(-300)
       .setTween(certTween)
-      .addTo(controller2);
+      .addTo(controller);
 
   });
 
@@ -153,7 +151,7 @@ if (!is_mobile) {
     var sceneClients = new ScrollMagic.Scene({triggerElement: element})
       .offset(-400)
       .setTween(clientsTween)
-      .addTo(controller2);
+      .addTo(controller);
 
   });
 
